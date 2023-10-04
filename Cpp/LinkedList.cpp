@@ -95,13 +95,18 @@ void input(NODE* &phead){
     }
 }
 
+int Dem(NODE* phead){
+    int cnt = 0;
+    while(phead != NULL){
+        ++cnt;
+        phead = phead->next;
+    }
+    return cnt;
+}
 int main(){
 	NODE* phead = NULL;
 	input(phead);
-	int x,y;
-    scanf("%d%d",&x,&y);
-    insertAfter(phead,x,y);
-    Output(phead);
-
+	Output(phead);
+    printf("\n%d",Dem(phead));
     return 0;
 }
