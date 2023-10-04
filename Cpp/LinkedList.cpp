@@ -29,6 +29,22 @@ void insertFirst(NODE* &phead,int x){
     }
 }
 
+/*insert Last*/
+void insertLast(NODE* &phead,int x){
+    NODE* newNode = makeNode(x);
+    if(isEmpty(phead)){
+        phead = newNode;
+    }
+    else{
+        NODE* p = phead;
+        while(p->next != NULL){
+            p = p->next;
+        }
+        p->next = newNode;
+    }
+
+}
+
 
 int main(){
 
