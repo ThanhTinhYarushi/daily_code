@@ -103,6 +103,30 @@ int Dem(NODE* phead){
     }
     return cnt;
 }
+
+void insertVitri(NODE* &phead,int x,int vt){
+    if(vt < 0){
+        return;
+    }
+    NODE* newNode = makeNode(x);
+    if(vt == 0){
+        newNode->next = phead;
+        phead = newNode;
+        return;
+    }
+    NODE* p = phead;
+    int vitrihientai = 0;
+    while(p != NULL && vitrihientai < vt-1){
+        p = p->next;
+        vitrihientai++;
+    }
+    if(p == NULL){
+        return;
+    }
+    newNode->next = p->next;
+    p->next = newNode;
+}
+
 int main(){
 	NODE* phead = NULL;
 	input(phead);
