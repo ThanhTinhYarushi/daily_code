@@ -54,6 +54,22 @@ void Output(NODE* phead){
 	}
 }
 
+/* Find */
+int FindNode(NODE* phead,int x){
+    NODE* p = phead;
+    int found = 0;
+    while(p != NULL){
+        if(x == p->data){
+            ++found;
+            return 1;
+        }
+        p = p->next;
+    }
+    if(!found){
+        return 0;
+    }
+}
+
 int main(){
 	NODE* phead = NULL;
 	init(phead);
