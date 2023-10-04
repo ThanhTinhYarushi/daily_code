@@ -139,7 +139,7 @@ void DeleteLast(NODE* &phead){
 	NODE* truoc = NULL;
 	NODE* sau = phead;
 	while(sau->next != NULL){
-		truoc = sau;
+		truoc = sau;    
 		sau = sau->next;
 	}
 	if(truoc == NULL){
@@ -148,12 +148,29 @@ void DeleteLast(NODE* &phead){
 	else{
 		truoc->next = NULL;
 	}
+    free(sau);
 }
 
+/* Delete Mid */
+void DeleteMid(NODE* &phead,int pos){
+    if(pos <= 0 || pos > Dem(phead))    return;
+    NODE *truoc = NULL, *sau = phead;
+    while(sau->next != NULL){
+        truoc = sau;
+        sau = sau->next;
+    }
+    if(truoc == NULL){
+        phead = phead->next;
+    }
+    else{
+        truoc->next = sau->next;
+    }
+}
 int main(){
 	NODE* phead = NULL;
 	input(phead);
 	Output(phead);
+    
     
     return 0;
 }
