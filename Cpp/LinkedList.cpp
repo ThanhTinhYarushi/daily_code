@@ -127,6 +127,11 @@ void insertVitri(NODE* &phead,int x,int vt){
     p->next = newNode;
 }
 
+/* Delete First */
+void DeleteFirst(NODE* &phead){
+    if(isEmpty(phead))  return;
+    phead = phead->next;
+}
 int main(){
 	NODE* phead = NULL;
 	input(phead);
