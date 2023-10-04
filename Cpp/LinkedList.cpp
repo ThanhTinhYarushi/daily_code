@@ -29,6 +29,21 @@ void insertFirst(NODE* &phead,int x){
     }
 }
 
+/* insert mid */
+void insertMid(NODE* &phead, int x, int pos){
+    int n = Dem(phead);
+    if(pos <= 0 || pos > pos + 1) printf("Vi tri chen khong hop le");
+    if(n == 1){ insertFirst(phead, x); return; }
+    else if(n == pos+1){ insertLast(phead, x); return; }
+    NODE* p = phead;
+    for(int i=0; i<pos-1 ; i++ ){
+        p = p->next;
+    }
+    NODE* tmp = makeNode(x);
+    tmp->next = p->next;
+    p->next = tmp;
+}
+
 /*insert Last*/
 void insertLast(NODE* &phead,int x){
     NODE* newNode = makeNode(x);
@@ -166,6 +181,7 @@ void DeleteMid(NODE* &phead,int pos){
         truoc->next = sau->next;
     }
 }
+
 int main(){
 	NODE* phead = NULL;
 	input(phead);
