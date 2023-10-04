@@ -132,10 +132,12 @@ void DeleteFirst(NODE* &phead){
     if(isEmpty(phead))  return;
     phead = phead->next;
 }
+
+
 int main(){
 	NODE* phead = NULL;
 	input(phead);
 	Output(phead);
-    printf("\n%d",Dem(phead));
+    
     return 0;
 }
