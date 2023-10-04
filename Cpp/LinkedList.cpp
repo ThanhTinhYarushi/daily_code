@@ -70,9 +70,37 @@ int FindNode(NODE* phead,int x){
     }
 }
 
+/* Chen Y Sau X*/
+void insertAfter(NODE* &phead,int x,int y){
+    NODE* p = phead;
+    while(p != NULL){
+        if(p->data == x){
+            NODE* newNode = makeNode(y);
+            newNode->next = p->next;
+            p->next = newNode;
+            return;
+        }
+        p = p->next;
+    }
+}
+
+void input(NODE* &phead){
+    init(phead);
+    int n,x;
+    scanf("%d",&n);
+    for(int i=0; i<n ; i++){
+        scanf("%d",&x);
+        insertLast(phead,x);
+    }
+}
+
 int main(){
 	NODE* phead = NULL;
-	init(phead);
-	
+	input(phead);
+	int x,y;
+    scanf("%d%d",&x,&y);
+    insertAfter(phead,x,y);
+    Output(phead);
+
     return 0;
 }
