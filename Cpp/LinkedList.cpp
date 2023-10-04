@@ -84,6 +84,7 @@ void insertAfter(NODE* &phead,int x,int y){
     }
 }
 
+/* nhap nhieu phan tu*/
 void input(NODE* &phead){
     init(phead);
     int n,x;
