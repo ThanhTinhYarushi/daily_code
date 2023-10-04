@@ -13,6 +13,22 @@ NODE* makeNode(int x){
     return newNode;
 }
 
+void init(NODE* &phead){ phead = NULL; }
+
+bool isEmpty(NODE* phead){ phead == NULL; }
+
+/*insert First -> Chèn Đầu*/
+void insertFirst(NODE* &phead,int x){
+    NODE* newNode = makeNode(x);
+    if(isEmpty(phead)){
+        phead = newNode;
+    }
+    else{
+        newNode->next = phead;
+        phead = newNode;
+    }
+}
+
 
 int main(){
 
