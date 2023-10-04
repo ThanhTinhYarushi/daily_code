@@ -15,7 +15,7 @@ NODE* makeNode(int x){
 
 void init(NODE* &phead){ phead = NULL; }
 
-bool isEmpty(NODE* phead){ phead == NULL; }
+bool isEmpty(NODE* phead){ return phead == NULL; }
 
 /*insert First -> Chèn Đầu*/
 void insertFirst(NODE* &phead,int x){
@@ -45,8 +45,18 @@ void insertLast(NODE* &phead,int x){
 
 }
 
+/* Duyet */
+void Output(NODE* phead){
+	NODE* p = phead;
+	while(p != NULL){
+		printf("%d ",p->data);
+		p = p->next;
+	}
+}
 
 int main(){
-
+	NODE* phead = NULL;
+	init(phead);
+	
     return 0;
 }
