@@ -133,6 +133,22 @@ void DeleteFirst(NODE* &phead){
     phead = phead->next;
 }
 
+/* Deale Last */
+void DeleteLast(NODE* &phead){
+    if(phead == NULL)	return ;
+	NODE* truoc = NULL;
+	NODE* sau = phead;
+	while(sau->next != NULL){
+		truoc = sau;
+		sau = sau->next;
+	}
+	if(truoc == NULL){
+		phead = NULL;
+	}
+	else{
+		truoc->next = NULL;
+	}
+}
 
 int main(){
 	NODE* phead = NULL;
