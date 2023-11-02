@@ -17,6 +17,16 @@ void init(NODE* &phead){ phead = NULL; }
 
 bool isEmpty(NODE* phead){ return phead == NULL; }
 
+int Dem(NODE* phead){
+    NODE* p = phead;
+    int dem = 0;
+    while(p != NULL){
+        ++dem;
+        phead = phead->next;
+    }
+    return dem;
+}
+
 /*insert First -> Chèn Đầu*/
 void insertFirst(NODE* &phead,int x){
     NODE* newNode = makeNode(x);
@@ -26,6 +36,21 @@ void insertFirst(NODE* &phead,int x){
     else{
         newNode->next = phead;
         phead = newNode;
+    }
+}
+
+/*insert Last*/
+void insertLast(NODE* &phead,int x){
+    NODE* newNode = makeNode(x);
+    if(isEmpty(phead)){
+        phead = newNode;
+    }
+    else{
+        NODE* p = phead;
+        while(p->next != NULL){
+            p = p->next;
+        }
+        p->next = newNode;
     }
 }
 
@@ -42,22 +67,6 @@ void insertMid(NODE* &phead, int x, int pos){
     NODE* tmp = makeNode(x);
     tmp->next = p->next;
     p->next = tmp;
-}
-
-/*insert Last*/
-void insertLast(NODE* &phead,int x){
-    NODE* newNode = makeNode(x);
-    if(isEmpty(phead)){
-        phead = newNode;
-    }
-    else{
-        NODE* p = phead;
-        while(p->next != NULL){
-            p = p->next;
-        }
-        p->next = newNode;
-    }
-
 }
 
 /* Duyet */
@@ -110,14 +119,7 @@ void input(NODE* &phead){
     }
 }
 
-int Dem(NODE* phead){
-    int cnt = 0;
-    while(phead != NULL){
-        ++cnt;
-        phead = phead->next;
-    }
-    return cnt;
-}
+
 
 void insertVitri(NODE* &phead,int x,int vt){
     if(vt < 0){
