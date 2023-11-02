@@ -18,6 +18,9 @@ struct NODE{
 };
 typedef struct NODE* Node;
 
+// * declare
+
+
 // * Main ===============================
 int main(){
 
