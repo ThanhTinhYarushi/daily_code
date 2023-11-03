@@ -19,7 +19,7 @@ struct NODE{
 typedef struct NODE* Node;
 
 // * declare
-
+bool isEmpty(NODE* phead){ return phead == NULL; }
 
 // * Main ===============================
 int main(){
