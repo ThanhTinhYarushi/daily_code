@@ -213,3 +213,45 @@ void DeleteLast(NODE* &phead){
     }
     free(sau);
 }
+
+/**********************************
+ * * CHỨC NĂNG: XOÁ NODE Ở VỊ TRÍ *1
+ *        * TRẢ VỀ: KHÔNG         *
+ **********************************/
+void DeleteMid(NODE* &phead,int pos){
+    if(pos <= 0 || pos > Dem(phead))    return;
+    NODE *truoc = NULL, *sau = phead;
+    while(sau->next != NULL){
+        truoc = sau;
+        sau = sau->next;
+    }
+    if(truoc == NULL){
+        phead = phead->next;
+    }
+    else{
+        truoc->next = sau->next;
+    }
+}
+
+/**********************************
+ * * CHỨC NĂNG: XOÁ NODE Ở VỊ TRÍ *
+ *       * CHỨC NĂNG: KHÔNG       *
+ **********************************/
+void DeleteMid(NODE* &phead, int pos) {
+    if (pos <= 0 || pos > Dem(phead)) {
+        return;
+    }
+    NODE *truoc = NULL, *sau = phead;
+    int vthientai = 1;
+    while (sau != NULL && vthientai < pos) {
+        truoc = sau;
+        sau = sau->next;
+        vthientai++;
+    }
+    if (truoc == NULL) {
+        phead = phead->next;
+    } else {
+        truoc->next = sau->next;
+    }
+    free(sau);
+}
