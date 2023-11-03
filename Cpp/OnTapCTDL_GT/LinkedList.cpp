@@ -25,6 +25,7 @@ NODE* makeNode(int x);
 int Dem(NODE* phead);
 void insertFirst(NODE* &phead,int x);
 void insertLast(NODE* &phead,int x);
+void insertMid(NODE* &phead, int x, int pos);
 // * Main ===============================
 int main(){
 
@@ -85,3 +86,32 @@ void insertLast(NODE* &phead,int x){
         p->next = tmp;
     }
 }
+
+/**********************************************
+ * * CHỨC NĂNG: CHÈN NODE TẠI VỊ TRÍ CẦN THÊM *
+ *              * TRẢ VỀ: KHÔNG               *
+ **********************************************/
+void insertMid(NODE* &phead, int x, int pos){
+    int n = Dem(phead);
+    NODE* tmp = makeNode(x);
+    if(pos <= 0 || pos > n+1){
+        printf("Vi Tri chen khong hop le");
+        return;
+    }
+    if(pos == 1){
+        insertFirst(phead, x);
+        return;
+    }
+    else if(pos == n+1){
+        insertLast(phead, x);
+        return;
+    }
+    NODE* p = phead;
+    for(int i = 0; i < pos - 1 ; i++){
+        p = p->next;
+    }
+    tmp->next = p->next;
+    p->next = tmp;
+}
+
+
