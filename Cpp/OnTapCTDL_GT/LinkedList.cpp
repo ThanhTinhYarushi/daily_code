@@ -68,3 +68,19 @@ void insertFirst(NODE* &phead,int x){
         phead = tmp;
     }
 }
+
+/*************************************************
+ * * CHỨC NĂNG: CHÈN VÀO CUỐI DANH SÁCH LIÊN KẾT *
+ *                * TRẢ VỀ: KHÔNG                *
+ *************************************************/
+void insertLast(NODE* &phead,int x){
+    NODE* tmp = makeNode(x);
+    if(isEmpty(phead)){ phead = tmp; }
+    else{
+        NODE* p = phead;
+        while(p->next != NULL){
+            p = p->next;
+        }
+        p->next = tmp;
+    }
+}
