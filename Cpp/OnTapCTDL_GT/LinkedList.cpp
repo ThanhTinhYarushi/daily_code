@@ -24,6 +24,7 @@ void init(NODE*& phead){ phead = NULL; }
 NODE* makeNode(int x);
 int Dem(NODE* phead);
 void insertFirst(NODE* &phead,int x);
+void insertLast(NODE* &phead,int x);
 // * Main ===============================
 int main(){
 
