@@ -234,7 +234,7 @@ void DeleteMid(NODE* &phead,int pos){
 }
 
 /**********************************
- * * CHỨC NĂNG: XOÁ NODE Ở VỊ TRÍ *
+ * * CHỨC NĂNG: XOÁ NODE Ở VỊ TRÍ *2
  *       * CHỨC NĂNG: KHÔNG       *
  **********************************/
 void DeleteMid(NODE* &phead, int pos) {
