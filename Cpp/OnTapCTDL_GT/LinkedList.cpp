@@ -28,6 +28,7 @@ void insertLast(NODE* &phead,int x);
 void insertMid(NODE* &phead, int x, int pos);
 int findNode(NODE* phead, int x);
 void insertAfter(NODE* &phead,int x,int y);
+void insertVitri(NODE* &phead, int x, int vt);
 // * Main ===============================
 int main(){
 
@@ -151,4 +152,30 @@ void insertAfter(NODE* &phead,int x,int y){
         }
         p = p->next;
     }
+}
+
+/***************************************
+ * * CHỨC NĂNG: CHÈN NODE X TẠI VỊ TRÍ *
+ *          * TRẢ VỀ : KHÔNG           *
+ ***************************************/
+void insertVitri(NODE* &phead, int x, int vt){
+    if(vt < 0)  return;
+    NODE* newNode = makeNode(x);
+    if (vt == 0)
+    {
+        newNode->next = phead;
+        phead = newNode;
+        return;
+    }
+    NODE* p = phead;
+    int vthientai = 0;
+    while(p != NULL && vthientai < vt-1){
+        p = p->next;
+        vthientai++;
+    }
+    if(p == NULL){
+        return;
+    }
+    newNode->next = p->next;
+    p->next = newNode;
 }
