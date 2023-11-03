@@ -33,7 +33,9 @@ void DeleteFirst(NODE* &phead);
 void DeleteLast(NODE* &phead); 
 // * Main ===============================
 int main(){
-
+    NODE* phead = NULL;
+    input(phead);
+    output(phead);
     return 0;
 }
 
@@ -270,5 +272,22 @@ void DeleteAfter(NODE* &phead, int x){
         NODE* y = p->next;
         p->next = y->next;
         free(y);
+    }
+}
+
+void input(NODE* &phead){
+    int n, x;
+    scanf("%d",&n);
+    for(int i=0; i<n ; i++){
+        scanf("%d",&x);
+        insertLast(phead, x);
+    }
+}
+
+void output(NODE* phead){
+    NODE* p = phead;
+    while(p != NULL){
+        printf("%d ",p->data);
+        p = p->next;
     }
 }
