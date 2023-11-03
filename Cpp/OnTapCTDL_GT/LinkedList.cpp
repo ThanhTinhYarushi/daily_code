@@ -29,7 +29,7 @@ void insertMid(NODE* &phead, int x, int pos);
 int findNode(NODE* phead, int x);
 void insertAfter(NODE* &phead,int x,int y);
 void insertVitri(NODE* &phead, int x, int vt);
-void DeleteFirst(NODE* &phead);
+void DeleteFirst(NODE* &phead); 
 // * Main ===============================
 int main(){
 
@@ -186,7 +186,7 @@ void insertVitri(NODE* &phead, int x, int vt){
  *        * TRẢ VỀ: KHÔNG         *
  **********************************/
 void DeleteFirst(NODE* &phead){
-    
+
     if(isEmpty(phead)){ return;}
     phead = phead  ->next;
 
