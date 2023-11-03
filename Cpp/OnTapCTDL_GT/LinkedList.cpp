@@ -22,6 +22,7 @@ typedef struct NODE* Node;
 bool isEmpty(NODE* phead){ return phead == NULL; }
 void init(NODE*& phead){ phead = NULL; }
 NODE* makeNode(int x);
+int Dem(NODE* phead);
 // * Main ===============================
 int main(){
 
@@ -38,4 +39,18 @@ NODE* makeNode(int x){
     newNode->data = x;
     newNode->next = NULL;
     return newNode;
+}
+
+/*************************
+ * * CHỨC NẮNG: ĐẾM NODE *
+ *  * TRẢ VỀ: SỐ NGUYÊN  *
+ *************************/
+int Dem(NODE* phead){
+    NODE* p = phead;
+    int dem = 0;
+    while(p != NULL){
+        ++dem;
+        p = p->next;
+    }
+    return dem;
 }
