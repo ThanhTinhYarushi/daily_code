@@ -20,6 +20,7 @@ typedef struct NODE* Node;
 
 // * declare
 bool isEmpty(NODE* phead){ return phead == NULL; }
+void init(NODE*& phead){ phead = NULL; }
 
 // * Main ===============================
 int main(){
