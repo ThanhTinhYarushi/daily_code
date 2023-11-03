@@ -31,6 +31,11 @@ void insertAfter(NODE* &phead,int x,int y);
 void insertVitri(NODE* &phead, int x, int vt);
 void DeleteFirst(NODE* &phead); 
 void DeleteLast(NODE* &phead); 
+void DeleteMid(NODE* &phead, int pos);
+void DeleteMid1(NODE* &phead, int pos);
+void DeleteAfter(NODE* &phead, int x);
+void input(NODE* &phead);
+void output(NODE* phead);
 // * Main ===============================
 int main(){
     NODE* phead = NULL;
@@ -239,7 +244,7 @@ void DeleteMid(NODE* &phead,int pos){
  * * CHỨC NĂNG: XOÁ NODE Ở VỊ TRÍ *2
  *       * CHỨC NĂNG: KHÔNG       *
  **********************************/
-void DeleteMid(NODE* &phead, int pos) {
+void DeleteMid1(NODE* &phead, int pos){
     if (pos <= 0 || pos > Dem(phead)) {
         return;
     }
