@@ -255,3 +255,20 @@ void DeleteMid(NODE* &phead, int pos) {
     }
     free(sau);
 }
+
+/**************************************
+ * * CHỨC NĂNG: XOÁ NODE Y SAU NODE X *
+ *          * TRẢ VỀ: KHÔNG           *
+ **************************************/
+void DeleteAfter(NODE* &phead, int x){
+    if(phead == NULL){ return; }
+    NODE* p = phead;
+    while(p != NULL && p->data != x){
+        p = p->next;
+    }
+    if(p != NULL && p->next != NULL){
+        NODE* y = p->next;
+        p->next = y->next;
+        free(y);
+    }
+}
