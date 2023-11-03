@@ -30,6 +30,7 @@ int findNode(NODE* phead, int x);
 void insertAfter(NODE* &phead,int x,int y);
 void insertVitri(NODE* &phead, int x, int vt);
 void DeleteFirst(NODE* &phead); 
+void DeleteLast(NODE* &phead); 
 // * Main ===============================
 int main(){
 
@@ -192,3 +193,23 @@ void DeleteFirst(NODE* &phead){
 
 }
 
+/***********************************
+ * * CHỨC NĂNG: XOÁ NODE CUỐI CÙNG *
+ *         * TRẢ VỀ: KHÔNG         *
+ ***********************************/
+void DeleteLast(NODE* &phead){
+    if(phead == NULL)   return;
+    NODE* truoc = NULL;
+    NODE* sau = phead;
+    while(sau->next != NULL){
+        truoc = sau;
+        sau = sau->next;
+    }
+    if(truoc == NULL){
+        phead = NULL;
+    }
+    else{
+        truoc->next = NULL;
+    }
+    free(sau);
+}
