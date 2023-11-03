@@ -179,3 +179,12 @@ void insertVitri(NODE* &phead, int x, int vt){
     newNode->next = p->next;
     p->next = newNode;
 }
+
+/**********************************
+ * * CHỨC NĂNG: XOÁ NODE ĐẦU TIÊN *
+ *        * TRẢ VỀ: KHÔNG         *
+ **********************************/
+void DeleteFirst(NODE* &phead){
+    if(isEmpty(phead)){ return;}
+    phead = phead  ->next;
+}
