@@ -26,6 +26,8 @@ int Dem(NODE* phead);
 void insertFirst(NODE* &phead,int x);
 void insertLast(NODE* &phead,int x);
 void insertMid(NODE* &phead, int x, int pos);
+int findNode(NODE* phead, int x);
+void insertAfter(NODE* &phead,int x,int y);
 // * Main ===============================
 int main(){
 
@@ -114,4 +116,39 @@ void insertMid(NODE* &phead, int x, int pos){
     p->next = tmp;
 }
 
+/**************************************
+ * * CHỨC NĂNG: TÌM NODE CÓ GIÁ TRỊ X *
+ *           * TRẢ VỀ: INT            *
+ **************************************/
+int findNode(NODE* phead, int x){
+    NODE* p = phead;
+    int found = 0;
+    while(p != NULL){
+        if(x == p->data){
+            found++;
+            return 1;
+        }
+        p = p->next;
+    }
+    if(!found){
+        return 0;
+    }
+}
 
+/***************************************
+ * * CHỨC NĂNG: CHÈN NODE Y SAU NODE X *
+ *          * TRẢ VỀ : KHÔNG           *
+ ***************************************/
+void insertAfter(NODE* &phead,int x,int y){
+    NODE* p = phead;
+    if(isEmpty(phead)){ return; }
+    while(p != NULL){
+        if(p->data == x){
+            NODE* newNode = makeNode(y);
+            newNode->next = p->next;
+            p->next = newNode;
+            return;
+        }
+        p = p->next;
+    }
+}
