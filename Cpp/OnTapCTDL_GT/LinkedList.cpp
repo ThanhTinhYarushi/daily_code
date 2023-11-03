@@ -23,7 +23,7 @@ bool isEmpty(NODE* phead){ return phead == NULL; }
 void init(NODE*& phead){ phead = NULL; }
 NODE* makeNode(int x);
 int Dem(NODE* phead);
-void insertFirst(NODE* &phead,int x);
+
 // * Main ===============================
 int main(){
 
@@ -56,15 +56,3 @@ int Dem(NODE* phead){
     return dem;
 }
 
-/************************************************
- * * CHỨC NĂNG: CHÈN VÀO ĐẦU DANH SÁCH LIÊN KẾT *
- *               * TRẢ VỀ : KHÔNG               *
- ************************************************/
-void insertFirst(NODE* &phead,int x){
-    NODE* tmp = makeNode(x);
-    if(isEmpty(phead)){ phead = tmp;}
-    else{
-        tmp->next = phead;
-        phead = tmp;
-    }
-}
