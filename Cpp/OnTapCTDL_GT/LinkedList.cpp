@@ -196,7 +196,7 @@ void insertVitri(NODE* &phead, int x, int vt){
 void DeleteFirst(NODE* &phead){
 
     if(isEmpty(phead)){ return;}
-    phead = phead  ->next;
+    phead = phead->next;
 
 }
 
