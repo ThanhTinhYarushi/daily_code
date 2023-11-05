@@ -87,7 +87,30 @@ int max(Tree t){
 	}
 	return t->data;
 }
-
+/*destroy*/
+void XoaNode(Tree &t, int data){
+    if (t == NULL){
+        return;
+    }
+    else{
+        if (data < t->data){
+            XoaNode(t->pleft, data);
+        }
+        else if (data > t->data){
+            XoaNode(t->pright, data);
+        }
+        else{
+            NODE *X = t;
+            if (t->pleft == NULL){
+                t = t->pright; 
+            }
+            else if (t->pright == NULL){
+                t = t->pleft;
+            }
+            delete X;
+        }
+    }
+}
 
 int main(){
     return 0;
