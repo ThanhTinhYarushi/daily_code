@@ -21,7 +21,7 @@ thức postfix (1.0 đ)
 3.2 Duyệt cây theo thứ tự (0,5đ)  
 3.3 Ghi kết quả từng bước tạo cây nhị phân tìm kiếm cân bằng (1,0đ)  
 3.4 Thao tác thêm/xóa trên cây hoặc cài đặt 1 hàm xử lý trên cây (1.0đ)  
-
+=> Done
 ## Graph
 
 4.0 Đồ thị - Chu trình - Đường đi ngắn nhất (2.0 đ)  
