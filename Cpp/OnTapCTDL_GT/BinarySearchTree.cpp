@@ -1,7 +1,9 @@
 #include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+#include<cstdlib>
+
 using namespace std;
-
-
 struct NODE{
     int data;
     NODE* pleft;
@@ -113,5 +115,23 @@ void XoaNode(Tree &t, int data){
 }
 
 int main(){
+    Tree t = NULL;
+    int n, x;
+    cin >> n;
+    for(int i=0 ; i<n ; i++){
+        cin >> x;
+        insertTree(t, x);
+    }
+    printf("Duyet NLR: ");
+    NLR(t);
+    printf("\n");
+	//=======================
+    printf("Duyet LNR: ");
+    LNR(t);
+    printf("\n");
+	//=======================
+    printf("Duyet LRN: ");
+    LRN(t);
+    printf("\n");
     return 0;
 }
