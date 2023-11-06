@@ -1,7 +1,5 @@
 # Ôn Tập - Thi Cuối Kỳ
-
 ## Danh sách liên kết đơn - Linked List
-
 1.0 Danh sách liên kết đơn (vd: Biểu diễn đa mm (3.0đ)  
 1.1. Khai báo danh sách liên kết (1.0 đ)  
 1.2. Thao tác chèn/xóa (1.0 đ)  
@@ -23,8 +21,8 @@ thức postfix (1.0 đ)
 3.4 Thao tác thêm/xóa trên cây hoặc cài đặt 1 hàm xử lý trên cây (1.0đ)  
 => Done
 ## Graph
-
 4.0 Đồ thị - Chu trình - Đường đi ngắn nhất (2.0 đ)  
 4.1 Biểu diễn ma trận kề/trọng số từ đồ thị cho trước (1.0 đ)  
 4.2 Ghi kết quả từng bước tìm đường đi ngắn nhất theo Djisktra/Ford-Bellman hoặc tìm cây
 bao trùm (nhỏ nhất) theo Prim/ Kruskal (1.0 đ)  
+=> Done
