@@ -45,4 +45,9 @@
 }
 
 .footer {
+  margin-top: 32px;
+}
+
+.footer .copyright-footer {
+  margin-top: 20px;
 }
