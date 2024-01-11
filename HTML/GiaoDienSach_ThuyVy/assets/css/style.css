@@ -1,13 +1,18 @@
+/* Reset Css */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Common */
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Main */
+
+/* Header */
 #header {
   background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png);
   background-color: #333;
@@ -40,6 +45,7 @@ main {
   padding: 20px;
 }
 
+/* Content */
 .book-list {
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +64,7 @@ img {
   height: 50px;
 }
 
+/* Footer */
 footer {
   background-color: #333;
   color: #fff;
