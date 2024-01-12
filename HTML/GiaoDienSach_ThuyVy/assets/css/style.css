@@ -104,6 +104,35 @@ html {
 
 /* ! Slider */
 #slider {
+  margin-top: 46px;
+  padding-top: 30%; /* Giảm giá trị padding-top */
+  height: 300px; /* Chiều cao cố định của slider */
+  width: 100%; /* Chiều rộng cố định của slider */
+
+  position: relative;
+  background: url(/HTML/GiaoDienSach_ThuyVy/assets/img/slider/slider1.jpg) top
+    center / cover no-repeat;
+}
+
+#slider .text-content {
+  color: #fff;
+  position: absolute;
+  bottom: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-shadow: 0 0 10px #09608f;
+}
+
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#slider .text-description {
+  font-size: 15px;
+  margin-top: 25px;
+  text-shadow: 0 0 10px #000;
 }
 
 /* ! Content */
