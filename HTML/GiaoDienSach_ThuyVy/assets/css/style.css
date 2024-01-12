@@ -133,7 +133,7 @@ html {
 /* ! Slider */
 #slider {
   /* margin-top: 46px; */
-  padding-top: 30%; /* Giảm giá trị padding-top 45.9% */
+  padding-top: 45.9%; /* Giảm giá trị padding-top 45.9% */
   height: 300px; /* Chiều cao cố định của slider */
   width: 100%; /* Chiều rộng cố định của slider */
 
@@ -173,7 +173,7 @@ html {
 
 .Heading-content {
   display: block;
-  width: 100vw;
+  width: 80vw;
   font-size: 26px;
   line-height: 40px;
   background-image: var(--background-image-main);
@@ -184,7 +184,13 @@ html {
   color: #09608f;
   font-family: "Pacifico", cursive;
   font-weight: 100;
-  border: 10px solid #000;
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   /* font line border */
   text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
     -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
@@ -206,7 +212,7 @@ html {
 }
 
 .book-list .book-item:hover {
-  border: 5px solid red;
+  border: 1px solid #09608f;
 }
 
 .book-list .book-item img {
@@ -230,16 +236,26 @@ html {
 }
 
 .book-list .book-item button {
-  background-color: #3498db; /* Màu nền của nút */
-  color: #fff; /* Màu chữ của nút */
-  padding: 8px 16px; /* Kích thước nút */
-  border: none; /* Loại bỏ đường viền của nút */
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
   cursor: pointer;
   font-size: 14px;
 }
 
 .book-list .book-item button:hover {
-  background-color: #2980b9; /* Màu nền của nút khi di chuột qua */
+  background-color: #2980b9;
+}
+
+.book-sale .old-price {
+  color: #888;
+  text-decoration: line-through;
+}
+
+.book-sale .new-price {
+  color: #e74c3c;
+  font-weight: bold;
 }
 
 /* ! Footer */
