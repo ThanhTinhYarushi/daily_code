@@ -33,7 +33,17 @@
       <div id="header">
         <ul id="nav">
           <li><a href="#">Trang Chủ</a></li>
-          <li><a href="#">Danh Mục</a></li>
+          <li>
+            <a href="#">
+              Danh Mục
+              <ion-icon class="nav-down" name="caret-down"></ion-icon>
+            </a>
+            <ul class="subnav">
+              <li><a href="#Sale-books">Sách Sale</a></li>
+              <li><a href="#outstand-book">Sách Nổi Bật</a></li>
+              <li><a href="cart.html">Giỏ Hàng</a></li>
+            </ul>
+          </li>
           <li><a href="#">Giới Thiệu</a></li>
           <li><a href="#">Liên Hệ</a></li>
           <li>
@@ -66,7 +76,9 @@
       <div id="content">
         <div class="book-section">
           <!-- Sách Sale -->
-          <div class="Heading-content">Sách Sale</div>
+          <div id="Sale-books" class="Sale-Heading Heading-content">
+            Sách Sale
+          </div>
           <div class="book-list">
             <div class="book-item book-sale">
               <img
@@ -125,9 +137,63 @@
             </div>
           </div>
           <!-- Sách nổi bật -->
-          <div class="Heading-content">Sách Nổi Bật</div>
+          <div id="outstand-book" class="Heading-content">Sách Nổi Bật</div>
           <div class="book-list">
-            <div class="book-item"></div>
+            <div class="book-item book-sale">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/matbiec.jpg"
+                alt="Book1"
+              />
+              <h3>Mắt Biếc</h3>
+              <p>Author: Nguyễn Nhật Ánh</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 10.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-sale">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/hado.jpg"
+                alt="Book2"
+              />
+              <h3>Hạ Đỏ</h3>
+              <p>Author: Nguyễn Nhật Ánh</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 10.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-sale">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/sherlockholmes.jpg"
+                alt="Book3"
+              />
+              <h3>Sherlock Holmes</h3>
+              <p>Author: NXB RoseBook</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 12.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-sale">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/cosolaptrinh.jpg"
+                alt="Book4"
+              />
+              <h3>Cơ Sở Lập Trình</h3>
+              <p>Author: NXB BKHN</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 7.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-sale">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/harrypotter.jpg"
+                alt="Book5"
+              />
+              <h3>Harry Potter</h3>
+              <p>Author: J. K. Rowling</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 9.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
           </div>
           <!-- Sách Ngoại Văn -->
           <!-- Sách Nguyễn Nhật Ánh -->

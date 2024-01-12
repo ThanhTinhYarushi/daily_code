@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   --background-image-main: url(https://as2.ftcdn.net/v2/jpg/05/17/63/55/1000_F_517635575_8JLjpQgGXjPkYIbAwQd3FdOe1Fzmnqsu.jpg);
+  --background-image-sale: url(https://c8.alamy.com/comp/MADW7F/percent-seamless-business-background-discount-illustration-economic-finance-promotion-pattern-sale-background-MADW7F.jpg);
 }
 
 /* ! Common */
@@ -133,7 +134,7 @@ html {
 /* ! Slider */
 #slider {
   /* margin-top: 46px; */
-  padding-top: 45.9%; /* Giảm giá trị padding-top 45.9% */
+  padding-top: 42.7%; /* Giảm giá trị padding-top 45.9% */
   height: 300px; /* Chiều cao cố định của slider */
   width: 100%; /* Chiều rộng cố định của slider */
 
@@ -191,9 +192,14 @@ html {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
+
   /* font line border */
   text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
     -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.Heading-content.Sale-Heading {
+  background-image: var(--background-image-sale);
 }
 
 /* ! Sách */
