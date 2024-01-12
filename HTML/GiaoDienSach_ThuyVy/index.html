@@ -4,11 +4,43 @@
     <meta charset="UTF-8" />
     <title>Bookstore</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- icon ionic -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <div id="main">
       <!-- ! Begin: Header -->
-      <div id="header"></div>
+      <div id="header">
+        <ul id="nav">
+          <li><a href="#">Trang Chủ</a></li>
+          <li><a href="#">Danh Mục</a></li>
+          <li><a href="#">Giới Thiệu</a></li>
+          <li><a href="#">Liên Hệ</a></li>
+          <li>
+            <a href="#">
+              More
+              <ion-icon class="nav-down" name="caret-down"></ion-icon>
+            </a>
+            <ul class="subnav">
+              <li><a href="signup.html">Đăng Kí</a></li>
+              <li><a href="login.html">Đăng Nhập</a></li>
+              <li><a href="logout.html">Đăng Xuất</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Search btn -->
+        <!-- <div class="search-btn">
+          <ion-icon class="search-icon" name="search"></ion-icon>
+        </div> -->
+      </div>
       <!-- * End: Header -->
 
       <!-- ! Begin: Slider -->
