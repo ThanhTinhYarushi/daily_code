@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  --background-image: url(https://as2.ftcdn.net/v2/jpg/05/17/63/55/1000_F_517635575_8JLjpQgGXjPkYIbAwQd3FdOe1Fzmnqsu.jpg);
 }
 
 /* ! Common */
@@ -15,11 +16,25 @@ html {
 #main {
 }
 
+/* ! Banner */
+#banner {
+  background-image: var(--background-image);
+  background-size: 600px;
+  background-position: 50px 30px;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 24px;
+  font-style: italic;
+  color: #09608f;
+  line-height: 40px;
+}
+
 /* ! Header */
 #header {
   height: 46px;
-  background-color: #000;
-  position: fixed;
+  background-color: #fff;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -44,7 +59,8 @@ html {
 }
 
 #nav > li > a {
-  color: #fff;
+  color: #000;
+  border-top: 1px solid #ccc;
   text-transform: uppercase;
 }
 
@@ -104,8 +120,8 @@ html {
 
 /* ! Slider */
 #slider {
-  margin-top: 46px;
-  padding-top: 30%; /* Giảm giá trị padding-top */
+  /* margin-top: 46px; */
+  padding-top: 30%; /* Giảm giá trị padding-top 45.9% */
   height: 300px; /* Chiều cao cố định của slider */
   width: 100%; /* Chiều rộng cố định của slider */
 
@@ -137,6 +153,7 @@ html {
 
 /* ! Content */
 #content {
+  height: 2000px;
 }
 
 /* ! Footer */
