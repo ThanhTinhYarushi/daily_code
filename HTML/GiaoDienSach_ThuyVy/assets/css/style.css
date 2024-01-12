@@ -1,73 +1,31 @@
-/* Reset Css */
+/* ! Reset Css */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* Common */
+/* ! Common */
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Main */
+/* ! Main */
+#main {
+}
 
-/* Header */
+/* ! Header */
 #header {
-  background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png);
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
 }
 
-#heading-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 70px;
+/* ! Slider */
+#slider {
 }
 
-#header nav ul {
-  list-style: none;
+/* ! Content */
+#content {
 }
 
-#header nav li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-#header nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-main {
-  padding: 20px;
-}
-
-/* Content */
-.book-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.book {
-  width: 200px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  text-align: center;
-}
-
-img {
-  width: 50px;
-  height: 50px;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+/* ! Footer */
+#footer {
 }
