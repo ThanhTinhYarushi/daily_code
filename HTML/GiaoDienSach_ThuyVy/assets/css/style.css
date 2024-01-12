@@ -8,7 +8,7 @@
 
 /* ! Common */
 html {
-  font-family: Arial, Jetbrains Mono, Helvetica, Arial, sans-serif;
+  font-family: Arial, Jetbrains Mono, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -26,8 +26,15 @@ html {
   padding: 10px 0;
   font-size: 24px;
   font-style: italic;
-  color: #09608f;
+
   line-height: 40px;
+}
+
+#banner h1 {
+  color: #09608f;
+
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
 }
 
 /* ! Header */
@@ -61,6 +68,9 @@ html {
 #nav > li > a {
   color: #000;
   border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-radius: 20px;
   text-transform: uppercase;
 }
 
