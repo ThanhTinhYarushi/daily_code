@@ -6,6 +6,8 @@
   --background-image-main: url(https://as2.ftcdn.net/v2/jpg/05/17/63/55/1000_F_517635575_8JLjpQgGXjPkYIbAwQd3FdOe1Fzmnqsu.jpg);
   --background-image-sale: url(https://c8.alamy.com/comp/MADW7F/percent-seamless-business-background-discount-illustration-economic-finance-promotion-pattern-sale-background-MADW7F.jpg);
   --background-image-outstanding: url(https://png.pngtree.com/thumb_back/fw800/background/20231231/pngtree-hand-drawn-tribal-pattern-featuring-abstract-leaf-textures-seamlessly-repeated-image_13888401.png);
+  --background-image-global: url(https://as1.ftcdn.net/v2/jpg/05/54/94/48/1000_F_554944825_2MQJEh7n5ffmIdKaS6zyrJ2h6Gz1WPGn.jpg);
+  --background-image-NNA: url(https://e1.pxfuel.com/desktop-wallpaper/839/653/desktop-wallpaper-butterfly-and-leaves-seamless-pattern-in-pastel-colors-for-kids-design-cartoon-cute-smiling-animals-repeat-backgrounds-for-and-textile-summer-decor-vector-illustration-cartoon-flat-style-stock-illustration.jpg);
 }
 
 /* ! Common */
@@ -221,6 +223,20 @@ html {
   font-size: 40px;
 }
 
+.Heading-content.Global-Heading {
+  background-image: var(--background-image-global);
+  color: #17d9c9bd;
+  background-size: 500px;
+  font-size: 40px;
+}
+
+.Heading-content.NNA-Heading {
+  background-image: var(--background-image-NNA);
+  color: #0ae954eb;
+  background-size: 500px;
+  font-size: 40px;
+}
+
 /* ! Sách */
 .book-list {
   display: flex;
@@ -323,9 +339,33 @@ html {
 
 .book-list-outstand {
   background-image: linear-gradient(
-    0,
-    rgba(187, 234, 16, 0.807),
+    90deg,
+    rgba(16, 125, 234, 0.807),
     rgba(38, 13, 227, 0.4)
+  );
+  border-radius: 20px;
+  border: 1px solid #000;
+  overflow: hidden;
+  margin: 0 50px;
+}
+
+.book-list-global {
+  background-image: linear-gradient(
+    0,
+    rgba(16, 234, 180, 0.807),
+    rgba(38, 13, 227, 0.4)
+  );
+  border-radius: 20px;
+  border: 1px solid #000;
+  overflow: hidden;
+  margin: 0 50px;
+}
+
+.book-list-NNA {
+  background-image: linear-gradient(
+    0,
+    rgba(113, 151, 148, 0.807),
+    rgba(128, 136, 126, 0.4)
   );
   border-radius: 20px;
   border: 1px solid #000;
