@@ -287,9 +287,9 @@ html {
   position: absolute;
   color: white;
   font-weight: bold;
-  background-color: #e99c36; /* Màu nền của chữ "sale" */
-  padding: 5px 10px; /* Điều chỉnh khoảng cách của nền với chữ */
-  border-radius: 5px; /* Để bo tròn góc của nền */
+  background-color: #e99c36;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .book-list-sale::before {
