@@ -5,12 +5,21 @@
   box-sizing: border-box;
   --background-image-main: url(https://as2.ftcdn.net/v2/jpg/05/17/63/55/1000_F_517635575_8JLjpQgGXjPkYIbAwQd3FdOe1Fzmnqsu.jpg);
   --background-image-sale: url(https://c8.alamy.com/comp/MADW7F/percent-seamless-business-background-discount-illustration-economic-finance-promotion-pattern-sale-background-MADW7F.jpg);
+  --background-image-outstanding: url(https://png.pngtree.com/thumb_back/fw800/background/20231231/pngtree-hand-drawn-tribal-pattern-featuring-abstract-leaf-textures-seamlessly-repeated-image_13888401.png);
 }
 
 /* ! Common */
 html {
   font-family: Arial, Jetbrains Mono, Helvetica, sans-serif;
   scroll-behavior: smooth;
+}
+
+.mt-19 {
+  margin-top: 19px;
+}
+
+.mt-38 {
+  margin-top: 38px;
 }
 
 /* ! Main */
@@ -201,6 +210,13 @@ html {
 .Heading-content.Sale-Heading {
   background-image: var(--background-image-sale);
   color: #e90a2feb;
+  background-size: 500px;
+  font-size: 40px;
+}
+
+.Heading-content.Outstand-Heading {
+  background-image: var(--background-image-outstanding);
+  color: #2f0ae9eb;
   background-size: 500px;
   font-size: 40px;
 }
