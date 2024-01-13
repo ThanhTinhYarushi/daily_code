@@ -8,12 +8,17 @@
   --background-image-outstanding: url(https://png.pngtree.com/thumb_back/fw800/background/20231231/pngtree-hand-drawn-tribal-pattern-featuring-abstract-leaf-textures-seamlessly-repeated-image_13888401.png);
   --background-image-global: url(https://as1.ftcdn.net/v2/jpg/05/54/94/48/1000_F_554944825_2MQJEh7n5ffmIdKaS6zyrJ2h6Gz1WPGn.jpg);
   --background-image-NNA: url(https://e1.pxfuel.com/desktop-wallpaper/839/653/desktop-wallpaper-butterfly-and-leaves-seamless-pattern-in-pastel-colors-for-kids-design-cartoon-cute-smiling-animals-repeat-backgrounds-for-and-textile-summer-decor-vector-illustration-cartoon-flat-style-stock-illustration.jpg);
+  --background-image-science: url(https://cdn.pixabay.com/photo/2022/01/25/22/43/background-6967508_1280.jpg);
 }
 
 /* ! Common */
 html {
   font-family: Arial, Jetbrains Mono, Helvetica, sans-serif;
   scroll-behavior: smooth;
+}
+
+.mt-16 {
+  margin-top: 16px;
 }
 
 .mt-19 {
@@ -237,6 +242,13 @@ html {
   font-size: 40px;
 }
 
+.Heading-content.Science-Heading {
+  background-image: var(--background-image-science);
+  color: #cc0bee;
+  background-size: 500px;
+  font-size: 40px;
+}
+
 /* ! Sách */
 .book-list {
   display: flex;
@@ -366,6 +378,18 @@ html {
     0,
     rgba(113, 151, 148, 0.807),
     rgba(128, 136, 126, 0.4)
+  );
+  border-radius: 20px;
+  border: 1px solid #000;
+  overflow: hidden;
+  margin: 0 50px;
+}
+
+.book-list-science {
+  background-image: linear-gradient(
+    180deg,
+    rgb(149, 44, 12),
+    rgba(58, 171, 14, 0.4)
   );
   border-radius: 20px;
   border: 1px solid #000;
