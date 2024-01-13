@@ -200,6 +200,9 @@ html {
 
 .Heading-content.Sale-Heading {
   background-image: var(--background-image-sale);
+  color: #e90a2feb;
+  background-size: 500px;
+  font-size: 40px;
 }
 
 /* ! Sách */
