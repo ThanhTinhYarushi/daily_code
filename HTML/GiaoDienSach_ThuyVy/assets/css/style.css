@@ -405,6 +405,18 @@ html {
   margin: 0 50px;
 }
 
+.book-list-didactic {
+  background-image: linear-gradient(
+    180deg,
+    rgba(238, 112, 74, 0.584),
+    rgba(79, 46, 176, 0.4)
+  );
+  border-radius: 20px;
+  border: 1px solid #000;
+  overflow: hidden;
+  margin: 0 50px;
+}
+
 /* ! Footer */
 #footer {
 }
