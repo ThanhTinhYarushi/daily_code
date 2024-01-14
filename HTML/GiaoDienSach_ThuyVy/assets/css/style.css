@@ -9,6 +9,7 @@
   --background-image-global: url(https://as1.ftcdn.net/v2/jpg/05/54/94/48/1000_F_554944825_2MQJEh7n5ffmIdKaS6zyrJ2h6Gz1WPGn.jpg);
   --background-image-NNA: url(https://e1.pxfuel.com/desktop-wallpaper/839/653/desktop-wallpaper-butterfly-and-leaves-seamless-pattern-in-pastel-colors-for-kids-design-cartoon-cute-smiling-animals-repeat-backgrounds-for-and-textile-summer-decor-vector-illustration-cartoon-flat-style-stock-illustration.jpg);
   --background-image-science: url(https://cdn.pixabay.com/photo/2022/01/25/22/43/background-6967508_1280.jpg);
+  --background-image-didactic: url(https://i.pinimg.com/736x/91/70/dc/9170dcd5f348eb8898fae302ea76a6b8.jpg);
 }
 
 /* ! Common */
@@ -245,6 +246,13 @@ html {
 .Heading-content.Science-Heading {
   background-image: var(--background-image-science);
   color: #cc0bee;
+  background-size: 500px;
+  font-size: 40px;
+}
+
+.Heading-content.Didactic-Heading {
+  background-image: var(--background-image-didactic);
+  color: #0c0c0c;
   background-size: 500px;
   font-size: 40px;
 }
