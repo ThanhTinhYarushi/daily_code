@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ Hàng</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        background-color: #7ec855;
+      }
+
+      .shopping-cart {
+        width: 750px;
+        margin: 80px auto;
+        background: #ffffff;
+        box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title {
+        height: 60px;
+        border-bottom: 1px solid #e1e8ee;
+        padding: 20px 30px;
+        color: #5e6977;
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .item {
+        padding: 20px 30px;
+        border-top: 1px solid #e1e8ee;
+        display: flex;
+      }
+
+      .image img {
+        width: 80px;
+        height: auto;
+      }
+
+      .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+      }
+
+      .description span {
+        display: block;
+        font-size: 14px;
+        color: #43484d;
+        font-weight: 400;
+      }
+
+      .quantity {
+        display: flex;
+        align-items: center;
+      }
+
+      input {
+        width: 32px;
+        text-align: center;
+        font-size: 16px;
+        color: #43484d;
+        font-weight: 300;
+        border: 1px solid #e1e8ee;
+        border-radius: 4px;
+        margin: 0 5px;
+      }
+
+      .buttons {
+        margin-left: auto;
+      }
+
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .plus-btn img,
+      .minus-btn img,
+      .delete-btn img,
+      .like-btn img {
+        width: 20px;
+        height: 20px;
+      }
+
+      .total-price {
+        margin-left: auto;
+        font-size: 16px;
+        color: #43484d;
+        font-weight: 300;
+      }
+
+      /* Trong tệp styles.css */
+      .checkout-button {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .checkout-btn {
+        background-color: #1e90ff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      .checkout-btn:hover {
+        background-color: #0d67a0;
+      }
+
+      /* Trong tệp styles.css */
+      .total-section {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 500px;
+      }
+
+      .total-label {
+        font-size: 18px;
+      }
+
+      .total-amount {
+        font-size: 20px;
+        font-weight: bold;
+        color: #1e90ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shopping-cart">
+      <div class="title">Giỏ hàng</div>
+
+      <div class="item">
+        <div class="image">
+          <img src="assets/img/book-img/hado.jpg" alt="Product Image" />
+        </div>
+
+        <div class="details">
+          <div class="description">
+            <span>Hạ Đỏ</span>
+            <span style="margin-top: 8px">Bản in đầu</span>
+          </div>
+
+          <div class="quantity">
+            <button class="minus-btn" type="button">
+              <img src="assets/svg/minus.svg" alt="Minus" />
+            </button>
+            <input type="text" name="quantity" value="1" />
+            <button class="plus-btn" type="button">
+              <img src="assets/svg/plus.svg" alt="Plus" />
+            </button>
+          </div>
+        </div>
+
+        <div class="total-price">$7.09</div>
+
+        <div class="buttons">
+          <button class="delete-btn" type="button">
+            <img src="assets/svg/delete.svg" alt="Delete" />
+          </button>
+          <button class="like-btn" type="button">
+            <img src="assets/svg/favorite-svgrepo-com.svg" alt="Like" />
+          </button>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="image">
+          <img
+            src="assets/img/book-img/trontrenmainha.jpg"
+            alt="Product Image"
+          />
+        </div>
+
+        <div class="details">
+          <div class="description">
+            <span>Trốn Trên Mái Nhà</span>
+            <span style="margin-top: 8px">Bản in 19</span>
+          </div>
+
+          <div class="quantity">
+            <button class="minus-btn" type="button">
+              <img src="assets/svg/minus.svg" alt="Minus" />
+            </button>
+            <input type="text" name="quantity" value="1" />
+            <button class="plus-btn" type="button">
+              <img src="assets/svg/plus.svg" alt="Plus" />
+            </button>
+          </div>
+        </div>
+
+        <div class="total-price">$12.99</div>
+
+        <div class="buttons">
+          <button class="delete-btn" type="button">
+            <img src="assets/svg/delete.svg" alt="Delete" />
+          </button>
+          <button class="like-btn" type="button">
+            <img src="assets/svg/favorite-svgrepo-com.svg" alt="Like" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Add more items as needed -->
+    </div>
+
+    <!-- Trong phần body của tệp HTML, sau danh sách sản phẩm -->
+    <div class="total-section">
+      <span class="total-label">Tổng cộng:</span>
+      <span class="total-amount">$0.00</span>
+    </div>
+
+    <div class="checkout-button">
+      <button class="checkout-btn" type="button">Thanh Toán</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".like-btn").on("click", function () {
+          $(this).toggleClass("is-active");
+        });
+
+        $(".minus-btn").on("click", function (e) {
+          e.preventDefault();
+          var $input = $(this).closest(".quantity").find("input");
+          var value = parseInt($input.val());
+
+          if (value > 1) {
+            value = value - 1;
+          } else {
+            value = 1;
+          }
+
+          $input.val(value);
+          updateTotal(); // Cập nhật tổng cộng khi giảm số lượng
+        });
+
+        $(".plus-btn").on("click", function (e) {
+          e.preventDefault();
+          var $input = $(this).closest(".quantity").find("input");
+          var value = parseInt($input.val());
+
+          if (value < 100) {
+            value = value + 1;
+          } else {
+            value = 100;
+          }
+
+          $input.val(value);
+          updateTotal(); // Cập nhật tổng cộng khi tăng số lượng
+        });
+      });
+
+      $(".checkout-btn").on("click", function () {
+        alert("Xin chờ, đang chuyển đến trang thanh toán...");
+        // Thêm logic xử lý thanh toán thực sự ở đây
+        // Ví dụ: window.location.href = 'trang-thanh-toan.html';
+      });
+
+      function updateTotal() {
+        var total = 0;
+
+        $(".item").each(function () {
+          var price = parseFloat(
+            $(this).find(".total-price").text().replace("$", "")
+          );
+          var quantity = parseInt($(this).find(".quantity input").val());
+          var itemTotal = price * quantity;
+          total += itemTotal;
+
+          // Cập nhật giá tiền cho từng sản phẩm
+          $(this)
+            .find(".total-price")
+            .text("$" + itemTotal.toFixed(2));
+        });
+
+        $(".total-amount").text("$" + total.toFixed(2));
+      }
+
+      $(".quantity input").on("input", function () {
+        updateTotal();
+      });
+
+      updateTotal(); // Gọi hàm updateTotal khi trang được tải
+    </script>
+  </body>
+</html>
