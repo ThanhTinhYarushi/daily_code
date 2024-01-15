@@ -179,6 +179,16 @@ html {
   line-height: 46px;
 }
 
+#header #Cart {
+  float: right;
+  padding: 0 10px;
+  font-size: 40px;
+}
+
+#header #Cart:hover {
+  cursor: pointer;
+}
+
 /* ! Slider */
 #slider {
   /* margin-top: 46px; */
