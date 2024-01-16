@@ -191,10 +191,10 @@ html {
 
 /* ! Slider */
 #slider {
-  /* margin-top: 46px; */
-  padding-top: 42.7%; /* Giảm giá trị padding-top 45.9% */
-  height: 300px; /* Chiều cao cố định của slider */
-  width: 100%; /* Chiều rộng cố định của slider */
+  padding-top: 42.7%;
+  height: 300px;
+  width: 100%;
+  transition: background 0.5s ease-in-out;
 
   position: relative;
   background: url(/HTML/GiaoDienSach_ThuyVy/assets/img/slider/slider1.jpg) top
