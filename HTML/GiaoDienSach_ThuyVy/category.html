@@ -2,8 +2,510 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danh Mục</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/img/icon/icon.jpg" />
+    <!-- icon ionic -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div id="main">
+      <!-- ! Begin: Banner -->
+      <div id="banner">
+        <h1>ChanBaek Bookstore</h1>
+      </div>
+      <!-- * End: Banner -->
+
+      <!-- ! Begin: Header -->
+      <div id="header">
+        <ul id="nav">
+          <li><a href="index.html">Trang Chủ</a></li>
+          <li><a href="#Sale-books">Sách Sale</a></li>
+          <li><a href="#outstand-book">Sách Nổi Bật</a></li>
+          <li><a href="#Global-book">Sách Ngoại Văn</a></li>
+          <li><a href="#NNA-book">Sách Nguyễn Nhật Ánh</a></li>
+          <li><a href="#science-book">Sách Khoa Học</a></li>
+          <li><a href="#didactic-book">Sách Giáo Khoa</a></li>
+          <li><a href="cart.html">Giỏ Hàng</a></li>
+        </ul>
+
+        <div id="Cart">
+          <ion-icon name="cart-outline"></ion-icon>
+        </div>
+      </div>
+      <!-- * End: Header -->
+
+      <!-- ! Begin: Content -->
+      <div id="content">
+        <!-- ?Begin: Book Section -->
+        <div class="book-section">
+          <!-- Sách Sale -->
+          <div id="Sale-books" class="Sale-Heading Heading-content">
+            Sách Sale
+          </div>
+          <div class="book-list book-list-sale">
+            <div class="book-item book-sale">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/matbiec.jpg"
+                alt="Book1"
+              />
+              <h3>Mắt Biếc</h3>
+              <p>Author: Nguyễn Nhật Ánh</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 10.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-sale">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/hado.jpg"
+                alt="Book2"
+              />
+              <h3>Hạ Đỏ</h3>
+              <p>Author: Nguyễn Nhật Ánh</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 7.09$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-sale">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/sherlockholmes.jpg"
+                alt="Book3"
+              />
+              <h3>Sherlock Holmes</h3>
+              <p>Author: NXB RoseBook</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 12.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-sale">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/cosolaptrinh.jpg"
+                alt="Book4"
+              />
+              <h3>Cơ Sở Lập Trình</h3>
+              <p>Author: NXB BKHN</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 7.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-sale">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/harrypotter.jpg"
+                alt="Book5"
+              />
+              <h3>Harry Potter</h3>
+              <p>Author: J. K. Rowling</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 9.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+          </div>
+          <!-- Sách nổi bật -->
+          <div id="outstand-book" class="Outstand-Heading Heading-content">
+            Sách Nổi Bật
+          </div>
+          <div class="book-list book-list-outstand">
+            <div class="book-item book-sale book-outstand">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/nhagiakim.jpg"
+                alt="Book5"
+              />
+              <h3>Nhà Giả Kim</h3>
+              <p>Author: Paulo Coelho</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 8.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-sale book-outstand">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/matbiec.jpg"
+                alt="Book1"
+              />
+              <h3>Mắt Biếc</h3>
+              <p>Author: Nguyễn Nhật Ánh</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 10.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-outstand">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/trontrenmainha.jpg"
+                alt="Book4"
+              />
+              <h3>Trốn Trên Mái Nhà</h3>
+              <p>Author: Lam</p>
+              <p class="price">Price: 12.99$</p>
+              <button class="add-cart-btn mt-19">Add to cart</button>
+            </div>
+            <div class="book-item book-sale book-outstand">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/hado.jpg"
+                alt="Book2"
+              />
+              <h3>Hạ Đỏ</h3>
+              <p>Author: Nguyễn Nhật Ánh</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 10.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-sale book-outstand">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/sherlockholmes.jpg"
+                alt="Book3"
+              />
+              <h3>Sherlock Holmes</h3>
+              <p>Author: Sir Arthur Conan Doyle</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 12.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+          </div>
+          <!-- Sách Ngoại Văn -->
+          <div id="Global-book" class="Global-Heading Heading-content">
+            Sách Ngoại Văn
+          </div>
+          <div class="book-list book-list-global">
+            <div class="book-item book-sale book-outstand book-global">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/sherlockholmes.jpg"
+                alt="Book3"
+              />
+              <h3>Sherlock Holmes</h3>
+              <p>Author: Sir Arthur Conan Doyle</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 12.99$</p>
+              <button class="add-cart-btn mt-19">Add to cart</button>
+            </div>
+            <div class="book-item book-global">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/sach-luyen-noi-tieng-anh-nhu-nguoi-ban-xu.jpg"
+                alt="Book3"
+              />
+              <h3>Luyện Nói Tiếng Anh Như Người Bản Xứ</h3>
+              <p>Author: A. J. Hoge</p>
+              <p class="old-price">Price: 19.99$</p>
+              <button class="add-cart-btn mt-19">Add to cart</button>
+            </div>
+            <div class="book-item book-global">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/tu-hoc-2000-tu-vung-tieng-anh-the-chu-de.jpg"
+                alt="Book3"
+              />
+              <h3>Tự học 2000 từ vựng tiếng Anh</h3>
+              <p>Author: The Windy</p>
+              <p class="old-price">Price: 19.99$</p>
+              <button class="add-cart-btn mt-19">Add to cart</button>
+            </div>
+            <div class="book-item book-global">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/haisophan.jpg"
+                alt="Book3"
+              />
+              <h3>Hai số phận</h3>
+              <p>Author: Jeffrey Archer</p>
+              <p class="old-price">Price: 9.99$</p>
+              <button class="add-cart-btn mt-38">Add to cart</button>
+            </div>
+            <div class="book-item book-global">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/kafka.jpg"
+                alt="Book3"
+              />
+              <h3>The essential Kafka</h3>
+              <p>Author: Franz Kafka</p>
+              <p class="old-price">Price: 27.99$</p>
+              <button class="add-cart-btn mt-38">Add to cart</button>
+            </div>
+            <div class="book-item book-global">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/khiloithuocvenhungvisao.jpg"
+                alt="Book3"
+              />
+              <h3>Khi Lỗi Thuộc Về Những Vì Sao</h3>
+              <p>Author: John Green</p>
+              <p class="old-price">Price: 8.99$</p>
+              <button class="add-cart-btn mt-19">Add to cart</button>
+            </div>
+            <div class="book-item book-global">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/LoveforImperfectThings.jpg"
+                alt="Book3"
+              />
+              <h3>Love for Imperfect Things</h3>
+              <p>Author: Haemin Sunim</p>
+              <p class="old-price">Price: 10.90$</p>
+              <button class="add-cart-btn mt-19">Add to cart</button>
+            </div>
+            <div class="book-item book-global">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/ng_i_l_m_v_n_t_hon.jpg"
+                alt="Book3"
+              />
+              <h3>Người làm vườn tí hon</h3>
+              <p>Author: Emily Hughes</p>
+              <p class="old-price">Price: 10.90$</p>
+              <button class="add-cart-btn mt-19">Add to cart</button>
+            </div>
+            <div class="book-item book-global">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/allthelightwecannotsee.jpg"
+                alt="Book3"
+              />
+              <h3>All the light we cannot see</h3>
+              <p>Author: Anthony Doerr</p>
+              <p class="old-price">Price: 12.90$</p>
+              <button class="add-cart-btn mt-19">Add to cart</button>
+            </div>
+            <div class="book-item book-global">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/theartofsimpleliving.jpg"
+                alt="Book3"
+              />
+              <h3>The Art Of Simple Living</h3>
+              <p>Author: Shunmyo Masuno</p>
+              <p class="old-price">Price: 19.90$</p>
+              <button class="add-cart-btn mt-19">Add to cart</button>
+            </div>
+            <div class="book-item book-global">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/bacsijekyllvaonghyde.jpg"
+                alt="Book3"
+              />
+              <h3>Bác sĩ Jelyll và ông Hyde</h3>
+              <p>Author: Robert Louis Stevenson</p>
+              <p class="old-price">Price: 11.90$</p>
+              <button class="add-cart-btn mt-19">Add to cart</button>
+            </div>
+            <div class="book-item book-global">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/thecabininthewood.jpg"
+                alt="Book3"
+              />
+              <h3>The Cabin In The Woods</h3>
+              <p>Author: Drew Goddard</p>
+              <p class="old-price">Price: 9.8$</p>
+              <button class="add-cart-btn mt-19">Add to cart</button>
+            </div>
+          </div>
+          <!-- Sách Nguyễn Nhật Ánh -->
+          <div id="NNA-book" class="NNA-Heading Heading-content">
+            Sách Nguyễn Nhật Ánh
+          </div>
+          <div class="book-list book-list-NNA">
+            <div class="book-item book-NNA book-sale">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/matbiec.jpg"
+                alt="Book1"
+              />
+              <h3>Mắt Biếc</h3>
+              <p>Author: Nguyễn Nhật Ánh</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 10.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-NNA book-sale">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/hado.jpg"
+                alt="Book2"
+              />
+              <h3>Hạ Đỏ</h3>
+              <p>Author: Nguyễn Nhật Ánh</p>
+              <p class="old-price">Price: 19.99$</p>
+              <p class="new-price">Price: 7.09$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-NNA">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/caychuoinondigiayxanh.jpg"
+                alt="Book2"
+              />
+              <h3>Cây Chuối Non Đi Giày Xanh</h3>
+              <p>Author: Nguyễn Nhật Ánh</p>
+              <p class="price">Price: 11.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-NNA">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/conchutgidenho.jpg"
+                alt="Book2"
+              />
+              <h3>Còn Chút Gì Để Nhớ</h3>
+              <p>Author: Nguyễn Nhật Ánh</p>
+              <p class="price">Price: 15.99$</p>
+              <button class="add-cart-btn mt-19">Add to cart</button>
+            </div>
+            <div class="book-item book-NNA">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/ngayxuacomotchuyentinh.jpeg"
+                alt="Book2"
+              />
+              <h3>Ngày Xưa Có Một Chuyện Tình</h3>
+              <p>Author: Nguyễn Nhật Ánh</p>
+              <p class="price">Price: 12.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-NNA">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/quangodilen.jpg"
+                alt="Book2"
+              />
+              <h3>Quán Gò Đi Lên</h3>
+              <p>Author: Nguyễn Nhật Ánh</p>
+              <p class="price">Price: 6.99$</p>
+              <button class="add-cart-btn mt-19">Add to cart</button>
+            </div>
+          </div>
+          <!-- Sách Khoa Học -->
+          <div id="science-book" class="Science-Heading Heading-content">
+            Sách Khoa Học
+          </div>
+          <div class="book-list book-list-science">
+            <div class="book-item book-science">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/cuocchienloden.jpg"
+                alt="Book2"
+              />
+              <h3>Cuộc Chiến Lỗ Đen</h3>
+              <p>Author: Leonard Susskind</p>
+              <p class="price">Price: 20.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-science">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/luocsuloainguoi.jpg"
+                alt="Book2"
+              />
+              <h3>Lược Sử Loài Người</h3>
+              <p>Author: Yuval Noah Harari</p>
+              <p class="price">Price: 16.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-science">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/longkinh.jpg"
+                alt="Book2"
+              />
+              <h3>Lồng Kính</h3>
+              <p>Author: Nicholas Carr</p>
+              <p class="price">Price: 10.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-science">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/trithucvevanvat.jpg"
+                alt="Book2"
+              />
+              <h3>Tri Thức Về Vạn Vật</h3>
+              <p>Author: Bách Khoa</p>
+              <p class="price">Price: 30.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-science">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/hondonvahaihoa.jpg"
+                alt="Book2"
+              />
+              <h3>Hỗn Độn Và Hài Hoà</h3>
+              <p>Author: Trịnh Xuân Thuận</p>
+              <p class="price">Price: 16.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-science">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/banthietkevidai.jpg"
+                alt="Book2"
+              />
+              <h3>Bản Thiết Kế Vĩ Đại</h3>
+              <p>Author: Stephen Hawking</p>
+              <p class="price">Price: 16.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+          </div>
+          <!-- Sách Giáo Khoa -->
+          <div id="didactic-book" class="Heading-content Didactic-Heading">
+            Sách Giáo Khoa
+          </div>
+          <div class="book-list book-list-didactic">
+            <div class="book-item book-didactic">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/sachgiaokhoa12.jpg"
+                alt="Book2"
+              />
+              <h3>Bộ Sách Giáo Khoa 12</h3>
+              <p>Author: NXB GD&ĐT</p>
+              <p class="price">Price: 5.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-didactic">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/sachgiaokhoa11.jpg"
+                alt="Book2"
+              />
+              <h3>Bộ Sách Giáo Khoa 11</h3>
+              <p>Author: NXB GD&ĐT</p>
+              <p class="price">Price: 5.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-didactic">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/sachgiaokhoa10.jpg"
+                alt="Book2"
+              />
+              <h3>Bộ Sách Giáo Khoa 10</h3>
+              <p>Author: NXB GD&ĐT</p>
+              <p class="price">Price: 5.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-didactic">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/sachgiaokhoa9.jpg"
+                alt="Book2"
+              />
+              <h3>Bộ Sách Giáo Khoa 9</h3>
+              <p>Author: NXB GD&ĐT</p>
+              <p class="price">Price: 5.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-didactic">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/sachgiaokhoa8.jpg"
+                alt="Book2"
+              />
+              <h3>Bộ Sách Giáo Khoa 8</h3>
+              <p>Author: NXB GD&ĐT</p>
+              <p class="price">Price: 5.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+            <div class="book-item book-didactic">
+              <img
+                src="/HTML/GiaoDienSach_ThuyVy/assets/img/book-img/sachgiaokhoa3.jpg"
+                alt="Book2"
+              />
+              <h3>Bộ Sách Giáo Khoa 3</h3>
+              <p>Author: NXB GD&ĐT</p>
+              <p class="price">Price: 5.99$</p>
+              <button class="add-cart-btn">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- End: Book Section -->
+
+        <div class="empty"></div>
+      </div>
+    </div>
+  </body>
 </html>
