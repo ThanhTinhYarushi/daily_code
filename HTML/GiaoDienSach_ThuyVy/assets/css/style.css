@@ -609,3 +609,42 @@ html {
 #footer .copyright a {
   color: rgba(0, 0, 0, 0.6);
 }
+
+/* ! Category */
+.new-Heading {
+  display: block;
+  width: 20vw;
+  font-size: 26px;
+  line-height: 40px;
+  background-image: url(https://www.shutterstock.com/image-vector/repeat-black-white-hexagon-pattern-260nw-341015510.jpg);
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #09608f;
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  /* font line border */
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+    -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.new-Heading.Heading-content.More-Heading {
+  /* background-image: var(--background-image-science); */
+  color: #000000;
+  background-size: 500px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.Heading-content.More-Heading a {
+  text-decoration: none;
+}
