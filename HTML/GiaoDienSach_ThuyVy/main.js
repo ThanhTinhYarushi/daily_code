@@ -19,3 +19,8 @@ setInterval(function () {
     idx = 0;
   }
 }, 5000);
+
+// ...
+function goToCart() {
+  window.location.href = "cart.html";
+}

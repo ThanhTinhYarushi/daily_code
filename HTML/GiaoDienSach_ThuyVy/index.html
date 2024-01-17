@@ -35,21 +35,20 @@
         <ul id="nav">
           <li><a href="#">Trang Chủ</a></li>
           <li>
-            <a href="#">
+            <a href="about.html"> Giới Thiệu </a>
+          </li>
+          <li>
+            <a href="category.html">
               Danh Mục
               <ion-icon class="nav-down" name="caret-down"></ion-icon>
             </a>
             <ul class="subnav">
               <li><a href="#Sale-books">Sách Sale</a></li>
               <li><a href="#outstand-book">Sách Nổi Bật</a></li>
-              <li><a href="#Global-book">Sách Ngoại Văn</a></li>
-              <li><a href="#NNA-book">Sách NNA</a></li>
-              <li><a href="#science-book">Sách Khoa Học</a></li>
-              <li><a href="#didactic-book">Sách Giáo Khoa</a></li>
-              <li><a href="cart.html">Giỏ Hàng</a></li>
+              <li><a href="category.html">Trang danh Mục</a></li>
+              <!-- Thêm các danh mục khác tại đây -->
             </ul>
           </li>
-          <li><a href="#about">Giới Thiệu</a></li>
           <li><a href="#contact">Liên Hệ</a></li>
           <li>
             <a href="#">
@@ -64,7 +63,7 @@
           </li>
         </ul>
 
-        <div id="Cart">
+        <div id="Cart" onclick="goToCart()">
           <ion-icon name="cart-outline"></ion-icon>
         </div>
       </div>

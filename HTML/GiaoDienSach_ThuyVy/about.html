@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Giới Thiệu</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center; /* Thêm thuộc tính này để căn giữa nội dung chính của trang */
+      }
+
+      header {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 20px;
+      }
+
+      section {
+        margin: 20px;
+        text-align: center; /* Đặt lại text-align cho các phần nội dung để tránh ảnh hưởng đến text-align chung của body */
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      #desc {
+        line-height: 1.5;
+      }
+
+      /* Cải thiện giao diện chung */
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      body {
+        background-color: #f4f4f4;
+      }
+
+      section {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      /* Tùy chỉnh màu sắc và font chữ cho nội dung chính */
+
+      #introduction,
+      #book-categories,
+      #special-offers {
+        color: #333;
+      }
+
+      /* Tùy chỉnh màu sắc cho danh mục sách */
+
+      #book-categories li {
+        color: #4caf50;
+      }
+
+      #book-categories li:hover {
+        text-decoration: underline;
+      }
+
+      #headd a {
+        text-decoration: none;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="headd">
+        <a href="index.html">ChanBeak BookStore</a>
+      </h1>
+      <p>Khám Phá Văn Hóa Đọc Của Riêng Bạn.</p>
+    </header>
+
+    <section id="introduction">
+      <h2>Chào mừng bạn đến với trang web bán sách của chúng tôi</h2>
+      <p>
+        Chúng tôi mang đến cho bạn một trải nghiệm đọc sách đa dạng và phong
+        phú.
+      </p>
+    </section>
+
+    <section id="desc">
+      Chanbeak Bookstore là một trang web bán sách trực tuyến chuyên nghiệp với
+      một loạt các tác phẩm đa dạng, phục vụ độc giả có sở thích đọc sách đa
+      dạng. Trang web được thiết kế để đáp ứng nhu cầu đọc sách của mọi lứa tuổi
+      và sở thích, đặc biệt là với những người yêu thích văn hóa C/C++. Với giao
+      diện người dùng thân thiện và dễ sử dụng, Chanbeak Bookstore cung cấp trải
+      nghiệm mua sắm trực tuyến thuận lợi. Người đọc có thể dễ dàng tìm kiếm
+      sách theo thể loại, tác giả hoặc từ khóa cụ thể. Ngoài ra, trang web cũng
+      cung cấp thông tin chi tiết về mỗi cuốn sách, giúp độc giả lựa chọn được
+      tác phẩm phù hợp với sở thích và nhu cầu cá nhân. Chanbeak Bookstore không
+      chỉ là nơi để mua sách mới, mà còn là cộng đồng cho những người đam mê đọc
+      sách. Trang web thường xuyên tổ chức các sự kiện, đọc sách trực tuyến, và
+      các hoạt động tương tác khác để tạo cơ hội cho cộng đồng đọc giả giao lưu,
+      chia sẻ ý kiến và tận hưởng niềm đam mê chung về sách. Nếu bạn là một sinh
+      viên yêu thích ngôn ngữ lập trình C/C++ và đang tìm kiếm sách liên quan
+      đến lĩnh vực này, Chanbeak Bookstore là địa điểm lý tưởng để khám phá và
+      mua sắm những tác phẩm phù hợp. Hãy trải nghiệm ngay để được đắm chìm
+      trong thế giới văn hóa và tri thức đa dạng mà trang web này mang đến.
+    </section>
+
+    <section id="book-categories">
+      <h2>Danh Mục Sách</h2>
+      <ul>
+        <li>Tiểu Thuyết</li>
+        <li>Khoa Học</li>
+        <li>Kinh Doanh và Phát Triển Cá Nhân</li>
+        <li>Sách Giáo Khoa</li>
+        <li>v.v....</li>
+      </ul>
+    </section>
+
+    <section id="special-offers">
+      <h2>Ưu Đãi Đặc Biệt</h2>
+      <p>Đặt mua ngay hôm nay để nhận ưu đãi đặc biệt và giảm giá hấp dẫn.</p>
+      <button onclick="goToCart()">Đặt Mua</button>
+    </section>
+
+    <footer>
+      <p>© 2024 ChanBeak Bookstore. All rights reserved.</p>
+    </footer>
+    <script>
+      function gotoCart() {
+        window.location.href = "cart.html";
+      }
+    </script>
+  </body>
+</html>
