@@ -81,11 +81,15 @@ std::string SoSanh(int playerChoice,int comChoice) {
     if((playerChoice == 1 && comChoice == 2)
          || (playerChoice == 2 && comChoice == 3)
          || (playerChoice == 3 && comChoice == 1)) {
-        return "|->Ban da thua 1 con robot";
-    } else if ((playerChoice == 1) && (comChoice == 3)) {
-        return "|->Ban da thang 1 con robot     |";
-    } else if(playerChoice == 1 && comChoice == 1) {
-        return "|->Hoa ra ban cung chi bang 1 con robot";
+                return "|->Ban da thua 1 con robot";
+    } else if ((playerChoice == 1 && comChoice == 3) 
+                || (playerChoice == 2 && comChoice == 1) 
+                || (playerChoice == 3 && comChoice == 2)) {
+                return "|->Ban da thang 1 con robot     |";
+    } else if((playerChoice == 1 && comChoice == 1) 
+                || (playerChoice == 2 && comChoice == 2) 
+                || (playerChoice == 3 && comChoice == 3)) {
+                return "|->Hoa ra ban cung chi bang 1 con robot";
     }
 
     return "idk";
