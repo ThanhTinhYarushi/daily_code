@@ -62,12 +62,6 @@ void KeoBuaBao() {
         std::cout << endl;
         Gach(20);
     } while (chon != 0);
-    // std::cout << "Moi ban Nhap:";
-    // std::cin >> player;
-    // std::cout << "Ban da ra " + choice(player) << std::endl;
-    // com = rand() % (max - min + 1) + min;
-    // std::cout << "May da ra " + choice(com) << std::endl;
-    // std::cout << SoSanh(player, com);
 }
 
 std::string choice(int choice) {
@@ -96,3 +90,26 @@ std::string SoSanh(int playerChoice,int comChoice) {
 
     return "idk";
 }
+
+//                       _oo0oo_
+//                      o8888888o
+//                      88" . "88
+//                      (| -_- |)
+//                      0\  =  /0
+//                    ___/`---'\___
+//                  .' \\|     |// '.
+//                 / \\|||  :  |||// \
+//                / _||||| -:- |||||- \
+//               |   | \\\  -  /// |   |
+//               | \_|  ''\---/''  |_/ |
+//               \  .-\__  '-'  ___/-. /
+//             ___'. .'  /--.--\  `. .'___
+//          ."" '<  `.___\_<|>_/___.' >' "".
+//         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+//         \  \ `_.   \_ __\ /__ _/   .-` /  /
+//     =====`-.____`.___ \_____/___.-`___.-'=====
+//                       `=---='
+//
+//     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//            Phật phù hộ, không bao giờ BUG
+//     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
