@@ -39,7 +39,7 @@ void insertFirst(NODE* &phead,int x){
     }
 }
 
-/*insert Last*/
+/*insert Last -> Chèn cuối*/
 void insertLast(NODE* &phead,int x){
     NODE* newNode = makeNode(x);
     if(isEmpty(phead)){
