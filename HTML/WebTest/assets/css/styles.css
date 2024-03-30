@@ -342,3 +342,40 @@ footer .column > a:hover {
   font-size: 0.8rem;
   text-align: center;
 }
+
+/* * Respinsive */
+@media (width < 900px) {
+  .nav-links {
+    display: none;
+  }
+  header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  header .image {
+    grid-area: 1/1/2/2;
+  }
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pricing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    grid-template-columns: 1fr 200px;
+  }
+}
+
+@media (width <600px) {
+  header .image::before {
+    display: none;
+  }
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pricing {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer {
+    grid-template-columns: 1fr 150px;
+  }
+}
