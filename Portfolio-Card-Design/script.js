@@ -25,3 +25,9 @@ allLinks.forEach((link) => {
     );
   });
 });
+
+const joke = document.getElementById("joke");
+
+joke.addEventListener("click", () => {
+  window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+});
