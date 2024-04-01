@@ -1,1 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+*:focus {
+  outline: 1px solid #3d5afe;
+  color: #3d5afe !important;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #e8eaf6;
+  border-radius: 160px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #c5cea9;
+  border-radius: 160px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #eff3f4;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  background: #fff;
+  width: 448px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.container header .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.container header .info .count {
+  padding: 6px;
+  font-weight: 600;
+  width: 100%;
+  background: #fafafa;
+  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 8px;
+}
+
+.container header .info .count i {
+  font-size: 20px;
+  font-weight: 500;
+}
