@@ -12,6 +12,7 @@ allLinks.forEach((link) => {
   });
 });
 
+// Khúc dưới này tự viết
 const joke = document.getElementById("joke");
 
 joke.addEventListener("click", () => {
