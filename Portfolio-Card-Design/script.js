@@ -13,8 +13,14 @@ allLinks.forEach((link) => {
 });
 
 // Khúc dưới này tự viết
-const joke = document.getElementById("joke");
 
-joke.addEventListener("click", () => {
-  window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-});
+
+function joke() {
+  const joke = document.getElementById("joke");
+
+  joke.addEventListener("click", () => {
+    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  });
+}
+
+joke()
