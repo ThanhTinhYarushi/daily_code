@@ -13,8 +13,6 @@ allLinks.forEach((link) => {
 });
 
 // Khúc dưới này tự viết
-
-
 function joke() {
   const joke = document.getElementById("joke");
 
@@ -23,4 +21,4 @@ function joke() {
   });
 }
 
-joke()
+joke();
