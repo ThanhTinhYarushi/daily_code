@@ -5,8 +5,27 @@
   box-sizing: border-box;
 } */
 
-html {
-  font-size: 16px;
+/* ? Css here */
+
+.box {
+  width: 100px;
+  height: 100px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* ? Css here */
+.box-1 {
+  background-color: #333;
+  padding: 10px 0 0 0;
+  border: 1px solid red;
+}
+
+.box-2 {
+  background-color: orange;
+}
+.box-3 {
+  background-color: brown;
+}
