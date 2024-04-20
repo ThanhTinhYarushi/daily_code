@@ -1,8 +1,39 @@
 /* ? Reset CSS */
 * {
-  padding: 0;
+  /* padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; */
 }
 
 /* ? Css here */
+h1 {
+  position: relative;
+  top: 100px;
+  left: 100px;
+  right: 50px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+}
+
+.wrapper {
+  width: 500px;
+  height: 400px;
+  background-color: bisque;
+  position: relative;
+}
+
+.box.box-1 {
+  background-color: aquamarine;
+  position: absolute;
+}
+
+.box.box-2 {
+  background-color: brown;
+  position: absolute;
+}
