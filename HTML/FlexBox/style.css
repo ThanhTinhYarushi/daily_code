@@ -90,6 +90,7 @@ body {
 /* PC, Tablet */
 @media (min-width: 740px) {
   .feature-layout {
+    font-size: 10px;
   }
 }
 
