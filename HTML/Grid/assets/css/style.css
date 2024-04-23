@@ -1,0 +1,21 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  margin: 0;
+}
+
+h1 {
+  padding: 100px 0;
+  font-size: 100px;
+  color: #fff;
+  margin: 0;
+}
+
+.container {
+  background-color: orange;
+  text-align: center;
+}
