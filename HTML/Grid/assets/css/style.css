@@ -1,21 +1,21 @@
-/* * {
-  padding: 0;
-  margin: 0;
+* {
   box-sizing: border-box;
-} */
+}
 
 body {
   margin: 0;
 }
 
-h1 {
-  padding: 100px 0;
-  font-size: 100px;
-  color: #fff;
-  margin: 0;
+.container {
+  text-align: center;
 }
 
-.container {
+.course-item {
   background-color: orange;
-  text-align: center;
+  height: 260px;
+}
+
+h1 {
+  color: #fff;
+  line-height: 260px;
 }
