@@ -29,5 +29,5 @@ DROP TABLE TEST;
 `ALTER TABLE`
 
 ```sql
-
+ALTER TABLE dbo.TEST SET ...
 ```
