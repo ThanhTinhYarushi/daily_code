@@ -6,6 +6,11 @@
 
 /* Header */
 .header-section {
+  width: 100vw;
+  height: 50px;
+}
+
+.navigation-header {
 }
 
 /* content */
