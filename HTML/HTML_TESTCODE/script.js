@@ -1,2 +1,2 @@
-const hello = "Hello World";
-console.log(hello);
+const obj = ["Hello", [1, 2, ["World", "fucking"]]];
+console.table(obj);
